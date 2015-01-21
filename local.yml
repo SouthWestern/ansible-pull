@@ -1,6 +1,7 @@
 ---
 - hosts: 127.0.0.1
   user: student
+  sudo: yes
   tasks:
   - name: install icedtea-netx
     apt: name=icedtea-netx state=present
