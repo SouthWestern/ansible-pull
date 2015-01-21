@@ -1,0 +1,9 @@
+---
+- hosts: all
+  sudo: yes
+  remote_user: tech
+  tasks:
+  - name: install icedtea-netx
+    apt: name=icedtea-netx state=present
+  - name: install icedtea plugin
+    apt: name=icedtea-plugin state=present
