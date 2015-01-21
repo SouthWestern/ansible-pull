@@ -1,6 +1,6 @@
 ---
 - hosts: 127.0.0.1
-  user: student
+  user: tech
   sudo: yes
   tasks:
   - name: install icedtea-netx
