@@ -15,6 +15,3 @@
      
    - name: install libglu1-mesa:i386
      apt: name=libglu1-mesa:i386 state=present
-     
-   - name: copy apt preference file
-     copy: src=/usr/share/swsd/ansible/preferences dest=/etc/apt owner=root group=root mode=0644
