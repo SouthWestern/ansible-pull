@@ -4,18 +4,6 @@
    user: root
    
    tasks:
-   - name: install icedtea-netx
-     apt: name=icedtea-netx state=present
-     
-   - name: install icedtea plugin
-     apt: name=icedtea-plugin state=present
-     
-   - name: install libsm6:i386
-     apt: name=libsm6:i386 state=present
-     
-   - name: install libglu1-mesa:i386
-     apt: name=libglu1-mesa:i386 state=present
-     
    - name: Remove Packages
      apt: name={{ item }} state=absent
      with_items:
@@ -28,6 +16,3 @@
      - unity-webapps-facebookmessenger
      - unity-webapps-qml-examples
      - chromium-browser
-     
-   - name: copy apt preference file
-     copy: src=/usr/share/swsd/ansible/preferences dest=/etc/apt owner=root group=root mode=0644
