@@ -17,6 +17,8 @@
      - unity-webapps-qml-examples
      - chromium-browser
     
-    
+   - stat: path=/etc/post_cart.sh
+     register: st
+     
    - name: copy Firefox preference file
      copy: src=/usr/share/swsd/ansible/syspref.js dest=/etc/firefox owner=root group=root mode=0644
