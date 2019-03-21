@@ -30,4 +30,3 @@
      
    - name: Update url in Ansible file
      replace: path=/usr/share/swsd/ansible_swsd.sh regexp='www.swsd.k12.pa.us' replace='swweb.swsd.k12.pa.us'
-     when: st.stat.exists
